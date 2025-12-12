@@ -1,0 +1,5 @@
+Wokwi projekt link:
+https://wokwi.com/projects/449627428011753473
+
+Leírás:
+ESP32 + SSD1306 OLED sprite mozgatás MicroPythonban
