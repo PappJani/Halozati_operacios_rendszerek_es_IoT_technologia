@@ -16,7 +16,7 @@ https://wokwi.com/projects/449627428011753473
 
 ## 📁 Projekt struktúra
 
-- docs/ – dokumentáció (Word)
+- ESP32_OLED_Sprite_Projekt_Dokumentacio.docx– dokumentáció (Word)
 - wokwi-project.txt – Wokwi link
 
 ## 🚀 Futás
