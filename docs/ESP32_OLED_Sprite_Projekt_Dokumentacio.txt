@@ -1,1 +1,45 @@
+ESP32 OLED Sprite – Projekt dokumentáció
+
+Projekt célja
+Ez a projekt egy ESP32 mikrokontrolleren futó MicroPython program, amely egy 128x64 pixeles SSD1306 OLED kijelzőn
+egy egyszerű sprite (karakter) megjelenítését és mozgatását valósítja meg négy nyomógomb segítségével.
+
+Használt eszközök
+- ESP32 mikrokontroller
+- SSD1306 128x64 OLED kijelző (I2C)
+- 4 db nyomógomb (fel, le, balra, jobbra)
+- Wokwi online szimulátor
+- MicroPython
+
+Hardver felépítés
+Az OLED kijelző I2C kapcsolaton keresztül kommunikál az ESP32-vel.
+SDA: GPIO21
+SCL: GPIO22
+
+A gombok digitális bemenetként vannak használva belső felhúzó ellenállással.
+
+Szoftver működés
+A program folyamatos ciklusban figyeli a gombokat.
+Ha egy gomb lenyomásra kerül, a sprite pozíciója változik.
+Minden ciklusban a kijelző törlésre kerül, majd az új pozíción újrarajzolódik a sprite.
+
+Sprite megjelenítés
+A sprite egy 8x8 pixeles mátrixként van definiálva.
+Egy külön függvény végzi a sprite kirajzolását a megadott koordináták alapján.
+
+Vezérlés
+Fel gomb: sprite felfelé mozog
+Le gomb: sprite lefelé mozog
+Bal gomb: sprite balra mozog
+Jobb gomb: sprite jobbra mozog
+
+Korlátozás
+A program gondoskodik arról, hogy a sprite ne lépjen ki a kijelző területéről.
+
+Fejlesztési lehetőségek
+- Animált sprite
+- Több objektum kezelése
+- Menü vagy pontszám kijelzése
+- Sebesség szabályozás
+
 
